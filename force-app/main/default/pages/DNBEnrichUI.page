@@ -1,0 +1,66 @@
+<apex:page standardController="Account" extensions="DNBControllerExtension" lightningStylesheets="true" id="accountPage">
+    <apex:form id="form">               
+        <div align="center" draggable="false" >
+            <apex:messages />
+            <apex:commandButton value="Activate Monitoring" action="{!getVFAddMonitoringParameter}" rendered="{!account.DUNS_Number__c != null && !searchDone && !account.DNB_Data_Monitoring__c && !isCMZ}" reRender="form" onclick="this.onclick=function(){return false;}">
+                <apex:param name="duns" value="{!account.DUNS_Number__c}" assignTo="{!monitoringParameter}"/>
+            </apex:commandButton>
+            <apex:commandButton value="Deactivate Monitoring" action="{!getVFRemoveMonitoringParameter}" rendered="{!account.DUNS_Number__c != null && !searchDone && account.DNB_Data_Monitoring__c && !isCMZ}" reRender="form" onclick="this.onclick=function(){return false;}" >
+                <apex:param name="duns" value="{!account.DUNS_Number__c}" assignTo="{!monitoringParameter}"/>
+            </apex:commandButton>
+            <apex:commandButton value="Search" action="{!CriteriaSearchAPIHandler}" rendered="{!account.DUNS_Number__c == null && !searchDone}" />
+            <apex:commandButton value="Search" action="{!IdentityResolutionAPIHandler}" rendered="{!account.DUNS_Number__c != null && !searchDone}" />
+        </div>          
+    <apex:pageBlock rendered="{!searchDone && searchResults != null}">        
+            <apex:pageBlockButtons location="bottom" rendered="{!searchDone && searchResults != null}">
+                <apex:commandButton action="{!firstPage}" value="First Page" rendered="{!searchDone && searchResults != null && currentPage != 1}"/>
+                <apex:commandButton action="{!previousPage}" value="Previous Page" rendered="{!searchDone && searchResults != null && currentPage != 1}"/>                
+                <apex:commandButton action="{!nextPage}" value="Next Page" rendered="{!searchDone && searchResults != null && currentPage != totalPages}"/>
+                <apex:commandButton action="{!lastPage}" value="Last Page" rendered="{!searchDone && searchResults != null && currentPage != totalPages}"/>
+                <apex:commandButton action="{!requestMoreResults}" value="Request More Results" rendered="{!searchDone && searchResults != null && currentPage == totalPages && account.DUNS_Number__c == null}"/>
+        </apex:pageBlockButtons>
+       <apex:pageBlock title="Search Results" rendered="{!searchDone && searchResults != null}" id="resultsPanel">
+            <apex:messages />           
+            <apex:pageBlockTable value="{!currentResults}" var="result" columns="9" columnsWidth="25%,15%,15%,15%,15%,15%,15%,15%" id="resultsTable" >
+                <apex:column >
+                    <apex:facet name="header">Select</apex:facet>
+                    <apex:commandButton id="enrichAccount" disabled="{!(result.duns != account.DUNS_Number__c && !isCMZ && account.DUNS_Number__c != null) || ('CMZ' + result.duns != account.DUNS_Number__c && isCMZ && account.DUNS_Number__c != null) }" action="{!getVFCreateAccountParameter}" value="Enrich Account" reRender="form" onclick="this.onclick=function(){return false;}">
+                        <apex:param name="duns" value="{!result.duns}" assignTo="{!dunsParameter}"/>
+                    </apex:commandButton>
+                </apex:column>
+                <apex:column value="{!result.primaryName}">
+                    <apex:facet name="header">Name</apex:facet>
+                </apex:column>                
+                <apex:column value="{!result.duns}">
+                    <apex:facet name="header">DUNS Number</apex:facet>   
+                </apex:column>
+                <apex:column value="{!result.primaryAddress.streetAddress.line1}">
+                    <apex:facet name="header">Address</apex:facet>   
+                </apex:column>
+                <apex:column value="{!result.primaryAddress.addressLocality.name}">
+                    <apex:facet name="header">City</apex:facet>   
+                </apex:column>
+                <apex:column value="{!result.primaryAddress.addressRegion.abbreviatedName}">
+                    <apex:facet name="header">State</apex:facet>   
+                </apex:column>
+                <apex:column value="{!result.primaryAddress.postalCode}" >
+                    <apex:facet name="header">Postal Code</apex:facet>   
+                </apex:column>
+                <apex:column value="{!result.primaryAddress.addressCountry.isoAlpha2Code }">
+                    <apex:facet name="header">Country</apex:facet>   
+                </apex:column>
+                <apex:column headerValue="Duplicate">
+                    <apex:outputLink value="{!result.duplicateLink}" rendered="{!account.DUNS_Number__c == null}">{!result.duplicateLink}</apex:outputLink>
+                </apex:column>
+            </apex:pageBlockTable>
+       </apex:pageBlock>
+    </apex:pageBlock>
+    <apex:outputPanel id="refresh" rendered="true">
+ <apex:outputPanel id="refresh1" rendered="{!refreshPage}">
+    <script>
+        window.top.location='/{!account.id}';
+     </script>
+ </apex:outputPanel>
+</apex:outputPanel>
+    </apex:form>
+</apex:page>

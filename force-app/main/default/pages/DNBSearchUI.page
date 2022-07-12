@@ -1,0 +1,61 @@
+<apex:page controller="DNBCustomController" lightningStylesheets="true">
+    <apex:form id="form">
+        <apex:pageBlock rendered="{!!searchDone}" id="searchPanel"> 
+            <apex:messages />
+            <apex:pageBlockButtons location="top" id="searchButtons">
+                <apex:commandButton value="Search" action="{!CriteriaSearchAPIHandler}" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Search for Business" columns="1" id="searchInputPanel">
+                <apex:pageBlockSectionItem > 
+                    <apex:outputLabel value="Business Name" for="businessName"/>
+                    <apex:outputPanel styleClass="requiredInput">                    
+                        <apex:inputText id="businessName" value="{!BusinessName}" label="Business Name" required="true"/>
+                    <apex:outputPanel styleClass="requiredBlock" />     
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>                    
+                        <apex:inputText id="City" value="{!City}" label="City"/>
+                        <apex:inputText id="Country" value="{!Country}" label="Country"/>      
+            </apex:pageBlockSection>
+        </apex:pageBlock>    
+    <apex:pageBlock rendered="{!searchDone && searchResults != null}" id="searchResults" >      
+            <apex:pageBlockButtons location="top" rendered="{!searchDone && searchResults != null}" id="searchResultsButtons">
+                <apex:commandButton value="New Search" rendered="{!searchDone}" action="{!newSearch}" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockButtons location="bottom" rendered="{!searchDone && searchResults != null}" id="navigationButtons">
+                <apex:commandButton action="{!firstPage}" value="First Page" rendered="{!searchDone && searchResults != null && currentPage != 1}"/>
+                <apex:commandButton action="{!previousPage}" value="Previous Page" rendered="{!searchDone && searchResults != null && currentPage != 1}"/>                
+                <apex:commandButton action="{!nextPage}" value="Next Page" rendered="{!searchDone && searchResults != null && currentPage != totalPages}"/>
+                <apex:commandButton action="{!lastPage}" value="Last Page" rendered="{!searchDone && searchResults != null && currentPage != totalPages}"/>
+                <apex:commandButton action="{!requestMoreResults}" value="Request More Results" rendered="{!searchDone && searchResults != null && currentPage == totalPages}"/>
+        </apex:pageBlockButtons>       
+       <apex:pageBlock title="Search Results" rendered="{!searchDone && searchResults != null}" id="resultsPanel" > 
+            <apex:messages />
+            <apex:pageBlockTable value="{!currentResults}" var="result" id="resultsTable" columnsWidth="10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%, 30%">
+                <apex:column id="tableSelection" headerValue="Select">
+                    <apex:commandButton id="createAccount" disabled="{!result.duplicateLink != null}" action="{!getVFCreateAccountParameter}" value="Create (CR)" reRender="resultsPanel" onclick="this.onclick=function(){return false;}">
+                        <apex:param name="duns" value="{!result.duns}" assignTo="{!dunsParameter}"/>
+                    </apex:commandButton>  
+                </apex:column>
+                <apex:column >
+                    <apex:commandButton id="createCMZAccount" disabled="{!result.duplicateCMZLink != null}" action="{!getVFCreateCMZAccountParameter}" value="Create (CMZ)" reRender="resultsPanel" onclick="this.onclick=function(){return false;}">
+                        <apex:param name="duns" value="{!result.duns}" assignTo="{!dunsParameter}"/>
+                    </apex:commandButton>  
+                </apex:column>
+                <apex:column value="{!result.primaryName}" headerValue="Name"></apex:column>                                
+                <apex:column value="{!result.duns}" headerValue="DUNS"></apex:column>
+                <apex:column value="{!result.primaryAddress.streetAddress.line1}" headerValue="Address"></apex:column>
+                <apex:column value="{!result.primaryAddress.addressLocality.name}" headerValue="City"></apex:column>
+                <apex:column value="{!result.primaryAddress.addressRegion.abbreviatedName}" headerValue="State"></apex:column>
+                <apex:column value="{!result.primaryAddress.postalCode}" headerValue="Postal Code"></apex:column>
+                <apex:column value="{!result.primaryAddress.addressCountry.isoAlpha2Code }" headerValue="Country"></apex:column>
+                <apex:column headerValue="Duplicate (CR)" >
+                    <apex:outputLink value="{!result.duplicateLink}">{!result.duplicateLink}</apex:outputLink>
+                </apex:column>
+                <apex:column headerValue="Duplicate (CMZ)" >
+                    <apex:outputLink value="{!result.duplicateCMZLink}">{!result.duplicateCMZLink}</apex:outputLink>
+                </apex:column>                
+            </apex:pageBlockTable>
+       </apex:pageBlock>       
+    </apex:pageBlock>
+    </apex:form> 
+</apex:page>

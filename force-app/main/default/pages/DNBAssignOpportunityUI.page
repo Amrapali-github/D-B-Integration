@@ -1,0 +1,78 @@
+<apex:page standardController="Opportunity" extensions="DNBOpportunityControllerExtension" lightningStylesheets="true" id="opportunityPage">
+    <apex:form id="form">               
+        <apex:pageBlock rendered="{!!searchDone}" id="searchPanel">
+            <apex:messages />          
+            <apex:pageBlockButtons location="top" id="searchButtons">
+                <apex:commandButton value="Search" action="{!CriteriaSearchAPIHandler}" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Search for Business" columns="1" id="searchInputPanel"> 
+                <apex:pageBlockSectionItem > 
+                    <apex:outputLabel value="Business Name" for="businessName"/>
+                    <apex:outputPanel styleClass="requiredInput">                    
+                        <apex:inputText id="businessName" value="{!BusinessName}" label="Business Name" required="true"/>
+                    <apex:outputPanel styleClass="requiredBlock" />     
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:inputText id="City" value="{!City}" label="City"/>
+                <apex:inputText id="Country" value="{!Country}" label="Country"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>           
+    <apex:pageBlock rendered="{!searchDone && searchResults != null}">
+            <apex:pageBlockButtons location="top" rendered="{!searchDone && searchResults != null}" id="searchResultsButtons">
+                <apex:commandButton value="New Search" rendered="{!searchDone}" action="{!newSearch}" />
+            </apex:pageBlockButtons>        
+            <apex:pageBlockButtons location="bottom" rendered="{!searchDone && searchResults != null}">
+                <apex:commandButton action="{!firstPage}" value="First Page" rendered="{!searchDone && searchResults != null && currentPage != 1}"/>
+                <apex:commandButton action="{!previousPage}" value="Previous Page" rendered="{!searchDone && searchResults != null && currentPage != 1}"/>                
+                <apex:commandButton action="{!nextPage}" value="Next Page" rendered="{!searchDone && searchResults != null && currentPage != totalPages}"/>
+                <apex:commandButton action="{!lastPage}" value="Last Page" rendered="{!searchDone && searchResults != null && currentPage != totalPages}"/>
+                <apex:commandButton action="{!requestMoreResults}" value="Request More Results" rendered="{!searchDone && searchResults != null && currentPage == totalPages}"/>
+        </apex:pageBlockButtons>
+       <apex:pageBlock title="Search Results" rendered="{!searchDone && searchResults != null}" id="resultsPanel">
+            <apex:messages />            
+            <apex:pageBlockTable value="{!currentResults}" var="result" columns="9" columnsWidth="25%,15%,15%,15%,15%,15%,15%,15%" id="resultsTable" >
+                <apex:column >
+                    <apex:facet name="header">Select</apex:facet>
+                    <apex:commandButton id="createAndAssignAccount" rendered="{!result.duplicateLink == null}" action="{!getVFCreateAndAssignAccountParameter}" value="Create And Assign Account" reRender="form" onclick="this.onclick=function(){return false;}">
+                        <apex:param name="duns" value="{!result.duns}" assignTo="{!dunsParameter}"/>
+                    </apex:commandButton>
+                    <apex:commandButton id="assignAccount" disabled="{!(result.duns == opportunity.account.DUNS_Number__c && !isCMZ) || ('CMZ' + result.duns == opportunity.account.DUNS_Number__c && isCMZ)}" rendered="{!result.duplicateLink != null}" action="{!getVFAssignAccountParameter}" value="Assign Account" reRender="form" onclick="this.onclick=function(){return false;}">
+                        <apex:param name="duns" value="{!result.duns}" assignTo="{!dunsParameter}"/>
+                    </apex:commandButton>
+                </apex:column>
+                <apex:column value="{!result.primaryName}">
+                    <apex:facet name="header">Name</apex:facet>
+                </apex:column>                
+                <apex:column value="{!result.duns}">
+                    <apex:facet name="header">DUNS Number</apex:facet>   
+                </apex:column>
+                <apex:column value="{!result.primaryAddress.streetAddress.line1}">
+                    <apex:facet name="header">Address</apex:facet>   
+                </apex:column>
+                <apex:column value="{!result.primaryAddress.addressLocality.name}">
+                    <apex:facet name="header">City</apex:facet>   
+                </apex:column>
+                <apex:column value="{!result.primaryAddress.addressRegion.abbreviatedName}">
+                    <apex:facet name="header">State</apex:facet>   
+                </apex:column>
+                <apex:column value="{!result.primaryAddress.postalCode}" >
+                    <apex:facet name="header">Postal Code</apex:facet>   
+                </apex:column>
+                <apex:column value="{!result.primaryAddress.addressCountry.isoAlpha2Code }">
+                    <apex:facet name="header">Country</apex:facet>   
+                </apex:column>
+                <apex:column headerValue="Duplicate">
+                    <apex:outputLink value="{!result.duplicateLink}" rendered="{!result.duplicateLink != null}">{!result.duplicateLink}</apex:outputLink>
+                </apex:column>
+            </apex:pageBlockTable>
+       </apex:pageBlock>
+    </apex:pageBlock>
+    <apex:outputPanel id="refresh" rendered="true">
+ <apex:outputPanel id="refresh1" rendered="{!refreshPage}">
+    <script>
+        window.top.location='/{!opportunity.id}';
+     </script>
+ </apex:outputPanel>
+</apex:outputPanel>
+    </apex:form>
+</apex:page>
