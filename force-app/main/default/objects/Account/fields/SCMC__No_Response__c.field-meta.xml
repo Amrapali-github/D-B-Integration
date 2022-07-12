@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCMC__No_Response__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This flag is set to indicate an RFQ coming into the system from this Account should be ignored.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this flag if you do not want to return anything when a request for quote is received from this Account.</inlineHelpText>
+    <label>No Response?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

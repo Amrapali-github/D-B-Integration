@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Link_to_draft_Customer_PO_Terms__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the link to the draft Customer PO terms here</inlineHelpText>
+    <label>Link to draft Customer PO Terms</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

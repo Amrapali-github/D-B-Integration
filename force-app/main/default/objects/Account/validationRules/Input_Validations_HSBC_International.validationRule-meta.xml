@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Input_Validations_HSBC_International</fullName>
+    <active>true</active>
+    <description>Checks completeness of bank details</description>
+    <errorConditionFormula>AND
+( TEXT(c2g__CODAPaymentMethod__c) = &quot;HSBC INTL (FROM UK)&quot;
+,
+
+OR(
+ISBLANK(  c2g__CODABankSWIFTNumber__c  ) ,
+ISBLANK( c2g__CODABankIBANNumber__c )
+
+)
+
+)</errorConditionFormula>
+    <errorDisplayField>c2g__CODAPaymentMethod__c</errorDisplayField>
+    <errorMessage>The IBAN Number must be populated if the Payment Method [HSBC INTL (FROM UK)] is selected. Please correct. Additionally, FFA mandates the input of a BIC (SWIFT) code. If this is not known, please enter &quot;-&quot;</errorMessage>
+</ValidationRule>

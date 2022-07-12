@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Print_Statement_PDF__c</fullName>
+    <description>##Conga created btn:00b0J000001tvyu</description>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;solmgr=1&quot; + 
+&quot;&amp;id=&quot; + Id +
+&quot;&amp;queryid=[CMPSTMT]a100J000006PrkK?pv0=&quot; + $User.Id + &quot;,[ACTSTMT]a100J000006PrkL,[TOTOUTSTMT]a100J000006PrkM?pv0={QVar0}~pv1=&quot; + Id + &quot;,[CMPQVAR]a100J000006PrkN,[ADSTMT]a100J000006PrkO?pv0=&quot; + Id + &quot;~pv1={QVar0},[JDSTMT]a100J000006PrkP?pv0=&quot; + Id + &quot;~pv1={QVar0},[StmtCT]a100J000006PrkQ&quot; + 
+&quot;&amp;qmode=Download&quot; + 
+&quot;&amp;defaultpdf=1&quot; + 
+&quot;&amp;ofn=&quot; + Name + &quot; &quot; + TEXT(TODAY()) +
+&quot;&amp;currencyculture=&quot; + ffaci__CurrencyCulture__c +
+&quot;&amp;templateid=a5Q0J0000004HnO&quot; + 
+&quot;&amp;dv0=&quot; + ffaci__CurrencyCulture__c +
+&quot;&amp;qvar1id=a100J000006PrkS&quot; + 
+&quot;&amp;qvar0id=a100J000006PrkR?pv0=&quot; + $User.Id</formula>
+    <label>Print Statement PDF</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

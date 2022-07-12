@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Termination_for_convenience__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>e.g. do Cloudreach or Customer have the right to terminate order forms at any time for convenience?</inlineHelpText>
+    <label>Termination for convenience</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

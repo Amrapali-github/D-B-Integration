@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CEL_Sponsor__c</fullName>
+    <externalId>false</externalId>
+    <label>CEL Sponsor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alex Rhea</fullName>
+                <default>false</default>
+                <label>Alex Rhea</label>
+            </value>
+            <value>
+                <fullName>Angelos Efthimiou</fullName>
+                <default>false</default>
+                <label>Angelos Efthimiou</label>
+            </value>
+            <value>
+                <fullName>Chris Halvorson</fullName>
+                <default>false</default>
+                <label>Chris Halvorson</label>
+            </value>
+            <value>
+                <fullName>Christian Metzger</fullName>
+                <default>false</default>
+                <label>Christian Metzger</label>
+            </value>
+            <value>
+                <fullName>Christian Nillsson</fullName>
+                <default>false</default>
+                <label>Christian Nillsson</label>
+            </value>
+            <value>
+                <fullName>Clark Whiteway</fullName>
+                <default>false</default>
+                <label>Clark Whiteway</label>
+            </value>
+            <value>
+                <fullName>Daniel Smythe</fullName>
+                <default>false</default>
+                <label>Daniel Smythe</label>
+            </value>
+            <value>
+                <fullName>Guillermo Fisher</fullName>
+                <default>false</default>
+                <label>Guillermo Fisher</label>
+            </value>
+            <value>
+                <fullName>Iain Edwards</fullName>
+                <default>false</default>
+                <label>Iain Edwards</label>
+            </value>
+            <value>
+                <fullName>Jon Lanyon</fullName>
+                <default>false</default>
+                <label>Jon Lanyon</label>
+            </value>
+            <value>
+                <fullName>Linda Nichols</fullName>
+                <default>false</default>
+                <label>Linda Nichols</label>
+            </value>
+            <value>
+                <fullName>Mark Seddon</fullName>
+                <default>false</default>
+                <label>Mark Seddon</label>
+            </value>
+            <value>
+                <fullName>Nicola Salvo</fullName>
+                <default>false</default>
+                <label>Nicola Salvo</label>
+            </value>
+            <value>
+                <fullName>Robert Sternberg</fullName>
+                <default>false</default>
+                <label>Robert Sternberg</label>
+            </value>
+            <value>
+                <fullName>Tony Bennett</fullName>
+                <default>false</default>
+                <label>Tony Bennett</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

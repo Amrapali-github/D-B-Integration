@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCMFFA__Company_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>By default, the FFA Company that the transactions from this Account will be created against.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>By default, the FFA Company that the transactions from this Account will be created against.</inlineHelpText>
+    <label>Company</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

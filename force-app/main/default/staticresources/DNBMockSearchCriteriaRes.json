@@ -1,0 +1,485 @@
+{
+    "transactionDetail": {
+        "transactionID": "rrt-0dae58047eafe4568-d-ea-28580-280151297-49",
+        "transactionTimestamp": "2019-09-18T16:22:32.079Z",
+        "inLanguage": "en-US",
+        "serviceVersion": "1"
+    },
+    "inquiryDetail": {
+        "isExporter": true,
+        "telephoneNumber": "6505550000",
+        "pageNumber": 1,
+        "yearlyRevenue": {
+            "maximumValue": 50000000000000,
+            "minimumValue": 1000000
+        },
+        "postalCode": "94110",
+        "dunsList": [
+            "804735132"
+        ],
+        "pageSize": 70,
+        "industryCodes": [
+            {
+                "typeDnbCode": 30832,
+                "description": [
+                    "Printing",
+                    "lithographic"
+                ]
+            },
+            {
+                "typeDnbCode": 24664,
+                "code": [
+                    "32311",
+                    "323113"
+                ]
+            },
+            {
+                "typeDnbCode": 3599,
+                "code": [
+                    "27520000"
+                ]
+            },
+            {
+                "typeDnbCode": 19295,
+                "description": [
+                    "Commercial"
+                ]
+            },
+            {
+                "typeDnbCode": 25838,
+                "description": [
+                    "Printing"
+                ]
+            }
+        ],
+        "countryISOAlpha2Code": "CA",
+        "searchTerm": "Manufactring",
+        "returnNavigators": true,
+        "usSicV4": [
+            "2752"
+        ],
+        "isOutOfBusiness": false,
+        "isImporter": true,
+        "isStandalone": false,
+        "isTelephoneDisconnected": false,
+        "tradeStyleName": "Gorman",
+        "familytreeRolesPlayed": [
+            12774,
+            12275
+        ],
+        "addressLocality": "San Francisco",
+        "addressRegion": "new jersey",
+        "isMailUndeliverable": false,
+        "isMarketable": true,
+        "businessEntityType": [
+            451
+        ],
+        "primaryName": "Gorman",
+        "registrationNumbers": [
+            "22-3725387"
+        ],
+        "tickerSymbol": "DNB",
+        "sort": [
+            {
+                "item": "yearlyRevenue",
+                "direction": "descending"
+            },
+            {
+                "item": "numberOfEmployees",
+                "direction": "descending"
+            },
+            {
+                "item": "isBranch",
+                "direction": "ascending"
+            },
+            {
+                "item": "countryISOAlpha2Code",
+                "direction": "ascending"
+            },
+            {
+                "item": "primaryName",
+                "direction": "ascending"
+            },
+            {
+                "item": "duns",
+                "direction": "ascending"
+            }
+        ],
+        "streetAddressLine1": "492 Koller St",
+        "numberOfEmployees": {
+            "informationScope": 9067,
+            "maximumValue": 5000,
+            "minimumValue": 2500
+        },
+        "locationRadius": {
+            "lat": 37.777709,
+            "lon": -122.404624,
+            "radius": 5,
+            "unit": "km"
+        },
+        "globalUltimateFamilyTreeMembersCount": {
+            "maximumValue": 500,
+            "minimumValue": 100
+        },
+        "domain": "gorman.com"
+    },
+      "candidatesReturnedQuantity": 1,
+      "candidatesMatchedQuantity": 1,
+      "searchCandidates": [
+          {
+              "displaySequence": 1,
+              "organization": {
+                  "duns": "804735132",
+                  "dunsControlStatus": {
+                      "isOutOfBusiness": false,
+                      "isMarketable": false,
+                      "isTelephoneDisconnected": false,
+                      "isMailUndeliverable": false,
+                      "isDelisted": true
+                  },
+                  "primaryName": "Gorman Manufacturing Company, Inc.",
+                  "primaryAddress": {
+                      "addressCountry": {
+                          "isoAlpha2Code": "US"
+                      },
+                      "addressLocality": {
+                          "name": "San Francisco"
+                      },
+                      "addressRegion": {
+                          "name": "California",
+                          "abbreviatedName": "CA"
+                      },
+                      "postalCode": "94110",
+                      "streetAddress": {
+                          "line1": "492 Koller St"
+                      },
+                      "latitude": 37.777709,
+                      "longitude": -122.404624,
+                      "isManufacturingLocation": true
+                  },
+                  "primaryIndustryCodes": [
+                      {
+                          "usSicV4": "2752",
+                          "usSicV4Description": "Lithographic commercial printing"
+                      }
+                  ],
+                  "corporateLinkage": {
+                      "isBranch": false,
+                      "familytreeRolesPlayed": [
+                          {
+                              "description": "Global Ultimate",
+                              "dnbCode": 12775
+                          },
+                          {
+                              "description": "Domestic Ultimate",
+                              "dnbCode": 12774
+                          },
+                          {
+                              "description": "Parent/Headquarters",
+                              "dnbCode": 9141
+                          }
+                      ],
+                      "globalUltimateFamilyTreeMembersCount": 7,
+                      "globalUltimate": {
+                          "duns": "804735132",
+                          "primaryName": "Gorman Manufacturing Company, Inc."
+                      }
+                  },
+                  "financials": [
+                      {
+                          "yearlyRevenue": [
+                              {
+                                  "value": 22589957,
+                                  "currency": "USD"
+                              }
+                          ]
+                      }
+                  ],
+                  "numberOfEmployees": [
+                      {
+                          "value": 120,
+                          "informationScopeDescription": "Headquarters Only (Employs Here)",
+                          "informationScopeDnBCode": 9068,
+                          "reliabilityDescription": "Actual",
+                          "reliabilityDnBCode": 9092
+                      },
+                      {
+                          "value": 153,
+                          "informationScopeDescription": "Consolidated",
+                          "informationScopeDnBCode": 9067,
+                          "reliabilityDescription": "Actual",
+                          "reliabilityDnBCode": 9092
+                      }
+                  ],
+                  "industryCodes": [
+                      {
+                          "code": "323111",
+                          "description": "Commercial Printing (except Screen and Books)",
+                          "typeDescription": "North American Industry Classification System 2017",
+                          "typeDnbCode": 30832,
+                          "priority": 1
+                      },
+                      {
+                          "code": "1068",
+                          "description": "Commercial Printing",
+                          "typeDescription": "D&B Hoovers Industry Code",
+                          "typeDnbCode": 25838,
+                          "priority": 1
+                      },
+                      {
+                          "code": "27520000",
+                          "description": "Commercial printing, lithographic",
+                          "typeDescription": "D&B Standard Industry Code",
+                          "typeDnbCode": 3599,
+                          "priority": 1
+                      }
+                  ],
+                  "telephone": [
+                      {
+                          "telephoneNumber": "6505550000",
+                          "isdCode": "1"
+                      }
+                  ],
+                  "businessEntityType": {
+                      "dnbCode": 451,
+                      "description": "Corporation"
+                  },
+                  "isStandalone": false
+              }
+          }
+      ],
+      "navigators": {
+          "yearlyRevenue": [
+              {
+                  "candidatesMatchedQuantity": 0,
+                  "query": {
+                      "yearlyRevenue": {
+                          "minimumValue": 0,
+                          "maximumValue": 1000000
+                      }
+                  }
+              },
+              {
+                  "candidatesMatchedQuantity": 0,
+                  "query": {
+                      "yearlyRevenue": {
+                          "minimumValue": 1000001,
+                          "maximumValue": 5000000
+                      }
+                  }
+              },
+              {
+                  "candidatesMatchedQuantity": 0,
+                  "query": {
+                      "yearlyRevenue": {
+                          "minimumValue": 5000001,
+                          "maximumValue": 10000000
+                      }
+                  }
+              },
+              {
+                  "candidatesMatchedQuantity": 1,
+                  "query": {
+                      "yearlyRevenue": {
+                          "minimumValue": 10000001,
+                          "maximumValue": 50000000
+                      }
+                  }
+              },
+              {
+                  "candidatesMatchedQuantity": 0,
+                  "query": {
+                      "yearlyRevenue": {
+                          "minimumValue": 50000001,
+                          "maximumValue": 500000000
+                      }
+                  }
+              },
+              {
+                  "candidatesMatchedQuantity": 0,
+                  "query": {
+                      "yearlyRevenue": {
+                          "minimumValue": 500000001,
+                          "maximumValue": 1000000000
+                      }
+                  }
+              },
+              {
+                  "candidatesMatchedQuantity": 0,
+                  "query": {
+                      "yearlyRevenue": {
+                          "minimumValue": 1000000001,
+                          "maximumValue": 10000000000
+                      }
+                  }
+              },
+              {
+                  "candidatesMatchedQuantity": 0,
+                  "query": {
+                      "yearlyRevenue": {
+                          "minimumValue": 10000000001
+                      }
+                  }
+              }
+          ],
+          "numberOfEmployees": [
+              {
+                  "candidatesMatchedQuantity": 0,
+                  "query": {
+                      "numberOfEmployees": {
+                          "informationScope": 9067,
+                          "minimumValue": 0,
+                          "maximumValue": 5
+                      }
+                  }
+              },
+              {
+                  "candidatesMatchedQuantity": 0,
+                  "query": {
+                      "numberOfEmployees": {
+                          "informationScope": 9067,
+                          "minimumValue": 6,
+                          "maximumValue": 10
+                      }
+                  }
+              },
+              {
+                  "candidatesMatchedQuantity": 0,
+                  "query": {
+                      "numberOfEmployees": {
+                          "informationScope": 9067,
+                          "minimumValue": 11,
+                          "maximumValue": 50
+                      }
+                  }
+              },
+              {
+                  "candidatesMatchedQuantity": 0,
+                  "query": {
+                      "numberOfEmployees": {
+                          "informationScope": 9067,
+                          "minimumValue": 51,
+                          "maximumValue": 100
+                      }
+                  }
+              },
+              {
+                  "candidatesMatchedQuantity": 1,
+                  "query": {
+                      "numberOfEmployees": {
+                          "informationScope": 9067,
+                          "minimumValue": 101,
+                          "maximumValue": 500
+                      }
+                  }
+              },
+              {
+                  "candidatesMatchedQuantity": 0,
+                  "query": {
+                      "numberOfEmployees": {
+                          "informationScope": 9067,
+                          "minimumValue": 501,
+                          "maximumValue": 1000
+                      }
+                  }
+              },
+              {
+                  "candidatesMatchedQuantity": 0,
+                  "query": {
+                      "numberOfEmployees": {
+                          "informationScope": 9067,
+                          "minimumValue": 1001,
+                          "maximumValue": 5000
+                      }
+                  }
+              },
+              {
+                  "candidatesMatchedQuantity": 0,
+                  "query": {
+                      "numberOfEmployees": {
+                          "informationScope": 9067,
+                          "minimumValue": 5001
+                      }
+                  }
+              }
+          ],
+          "industry": [
+              {
+                  "candidatesMatchedQuantity": 1,
+                  "query": {
+                      "usSicV4": [
+                          "2752"
+                      ]
+                  },
+                  "description": "Lithographic commercial printing"
+              }
+          ],
+          "businessEntityType": [
+              {
+                  "candidatesMatchedQuantity": 1,
+                  "query": {
+                      "businessEntityType": [
+                          451
+                      ]
+                  },
+                  "description": "Corporation"
+              }
+          ],
+          "familyTreeRole": [
+              {
+                  "candidatesMatchedQuantity": 1,
+                  "query": {
+                      "familytreeRolesPlayed": [
+                          9141
+                      ]
+                  },
+                  "description": "Parent/Headquarters"
+              },
+              {
+                  "candidatesMatchedQuantity": 1,
+                  "query": {
+                      "familytreeRolesPlayed": [
+                          12774
+                      ]
+                  },
+                  "description": "Domestic Ultimate"
+              },
+              {
+                  "candidatesMatchedQuantity": 1,
+                  "query": {
+                      "familytreeRolesPlayed": [
+                          12775
+                      ]
+                  },
+                  "description": "Global Ultimate"
+              }
+          ],
+          "location": {
+              "country": [
+                  {
+                      "candidatesMatchedQuantity": 1,
+                      "region": [
+                          {
+                              "candidatesMatchedQuantity": 1,
+                              "query": {
+                                  "addressRegion": "california"
+                              },
+                              "locality": [
+                                  {
+                                      "candidatesMatchedQuantity": 1,
+                                      "query": {
+                                          "addressLocality": "san francisco"
+                                      }
+                                  }
+                              ]
+                          }
+                      ],
+                      "query": {
+                          "countryISOAlpha2Code": "us"
+                      },
+                      "name": "United States"
+                  }
+              ]
+          }
+      }
+}

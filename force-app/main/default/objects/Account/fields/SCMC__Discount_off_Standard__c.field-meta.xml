@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCMC__Discount_off_Standard__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The discount off standard prices.  During the pricing algorithm, if the price is a standard price, this discount is applied to come up with the price for the item.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the discount off the standard price for this Customer.</inlineHelpText>
+    <label>Discount off Standard Price</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Supplier_account_Amendments</fullName>
+    <active>true</active>
+    <description>Only Supplier Accounts Manager can amend Supplier Account details</description>
+    <errorConditionFormula>AND(
+
+NOT( ISNEW() ), OR(ISCHANGED( c2g__CODABankAccountName__c ), ISCHANGED( c2g__CODABankSortCode__c ) , 
+
+ISCHANGED( Bank_account_type__c ) ,
+ISCHANGED( c2g__CODABankSWIFTNumber__c ) ,
+ISCHANGED( c2g__CODABankIBANNumber__c ) ,
+ISCHANGED( ffbf__BankBIC__c ) ,
+ISCHANGED( Bank_Routing_Number_US_Only__c ) ,
+ISCHANGED( Bank_Account_Building_Nb__c ) ,
+ISCHANGED( 	c2g__CODABankAccountNumber__c )) , RecordTypeId  =  &quot;0122000000077Pu&quot;,
+
+$User.Id &lt;&gt; &quot;0050J0000098HIK&quot;, $User.Id &lt;&gt; &quot;0050J000008RWs0&quot;
+
+)</errorConditionFormula>
+    <errorMessage>If the Supplier Account Details need amended this must be requested through the Supplier Request Form</errorMessage>
+</ValidationRule>

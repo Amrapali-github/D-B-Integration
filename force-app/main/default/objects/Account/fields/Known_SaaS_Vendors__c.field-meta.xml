@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Known_SaaS_Vendors__c</fullName>
+    <externalId>false</externalId>
+    <label>Known SaaS Vendors</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>Financialforce</fullName>
+                <default>false</default>
+                <label>Financialforce</label>
+            </value>
+            <value>
+                <fullName>Oracle OnDemand</fullName>
+                <default>false</default>
+                <label>Oracle OnDemand</label>
+            </value>
+            <value>
+                <fullName>DocuSign/EchoSign</fullName>
+                <default>false</default>
+                <label>DocuSign/EchoSign</label>
+            </value>
+            <value>
+                <fullName>Dynamics</fullName>
+                <default>false</default>
+                <label>Dynamics</label>
+            </value>
+            <value>
+                <fullName>Apttus</fullName>
+                <default>false</default>
+                <label>Apttus</label>
+            </value>
+            <value>
+                <fullName>WorkDay</fullName>
+                <default>false</default>
+                <label>WorkDay</label>
+            </value>
+            <value>
+                <fullName>Sugar CRM</fullName>
+                <default>false</default>
+                <label>Sugar CRM</label>
+            </value>
+            <value>
+                <fullName>SAP By Design</fullName>
+                <default>false</default>
+                <label>SAP By Design</label>
+            </value>
+            <value>
+                <fullName>NetSuite</fullName>
+                <default>false</default>
+                <label>NetSuite</label>
+            </value>
+            <value>
+                <fullName>Eloqua</fullName>
+                <default>false</default>
+                <label>Eloqua</label>
+            </value>
+            <value>
+                <fullName>Marketo</fullName>
+                <default>false</default>
+                <label>Marketo</label>
+            </value>
+            <value>
+                <fullName>Akamai</fullName>
+                <default>false</default>
+                <label>Akamai</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

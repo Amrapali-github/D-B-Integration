@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cloudreach_Entity__c</fullName>
+    <description>//May be replaced at a later date with a field populated from a process//</description>
+    <externalId>false</externalId>
+    <label>Cloudreach Entity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cloudreach B.V.</fullName>
+                <default>false</default>
+                <label>Cloudreach B.V.</label>
+            </value>
+            <value>
+                <fullName>Cloudreach Canada Inc</fullName>
+                <default>false</default>
+                <label>Cloudreach Canada Inc</label>
+            </value>
+            <value>
+                <fullName>Cloudreach Europe Limited</fullName>
+                <default>false</default>
+                <label>Cloudreach Europe Limited</label>
+            </value>
+            <value>
+                <fullName>Cloudreach GmbH</fullName>
+                <default>false</default>
+                <label>Cloudreach GmbH</label>
+            </value>
+            <value>
+                <fullName>Cloudreach Inc</fullName>
+                <default>false</default>
+                <label>Cloudreach Inc</label>
+            </value>
+            <value>
+                <fullName>Cloudreach SAS</fullName>
+                <default>false</default>
+                <label>Cloudreach SAS</label>
+            </value>
+            <value>
+                <fullName>Cloudreach Switzerland GmbH</fullName>
+                <default>false</default>
+                <label>Cloudreach Switzerland GmbH</label>
+            </value>
+            <value>
+                <fullName>Cloudamize Inc</fullName>
+                <default>false</default>
+                <label>Cloudamize Inc</label>
+            </value>
+            <value>
+                <fullName>Relus Acquisition LLC</fullName>
+                <default>false</default>
+                <label>Relus Acquisition LLC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

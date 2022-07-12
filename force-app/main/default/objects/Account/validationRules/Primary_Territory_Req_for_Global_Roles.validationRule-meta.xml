@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Territory_Req_for_Global_Roles</fullName>
+    <active>false</active>
+    <description>Primary Territory is required for new Accounts created by users with Global Roles.</description>
+    <errorConditionFormula>(ISNEW() = TRUE &amp;&amp;  ISBLANK(TEXT(Sales_Territory__c)) &amp;&amp;  $UserRole.Name = &quot;Global Head of Cloud Enablement&quot;)
+ || 
+(ISNEW() = TRUE &amp;&amp;  ISBLANK(TEXT(Sales_Territory__c)) &amp;&amp;  $UserRole.Name = &quot;Global Head of Cloud Operations&quot;)
+|| 
+(ISNEW() = TRUE &amp;&amp;  ISBLANK(TEXT(Sales_Territory__c)) &amp;&amp;  $UserRole.Name = &quot;Global Head of Cloud Platform&quot;)
+|| 
+(ISNEW() = TRUE &amp;&amp;  ISBLANK(TEXT(Sales_Territory__c)) &amp;&amp;  $UserRole.Name = &quot;Global Head of Commercial Ops&quot;)
+|| 
+(ISNEW() = TRUE &amp;&amp;  ISBLANK(TEXT(Sales_Territory__c)) &amp;&amp;  $UserRole.Name = &quot;Global Head of Salesforce&quot;)</errorConditionFormula>
+    <errorDisplayField>Sales_Territory__c</errorDisplayField>
+    <errorMessage>Please select a Primary Territory for this Account.</errorMessage>
+</ValidationRule>

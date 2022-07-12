@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supplier_Account_details</fullName>
+    <active>false</active>
+    <description>Only Supplier Accounts Manager can amend Supplier Account details</description>
+    <errorConditionFormula>RecordType.Name  = &quot;Supplier&quot;
+ &amp;&amp; 
+!ISNEW()
+ &amp;&amp; 
+($User.Id  &lt;&gt;  &quot;0050J0000097zoS&quot;)</errorConditionFormula>
+    <errorMessage>If the Supplier Account Details need amended this must be requested through the Supplier Request Form</errorMessage>
+</ValidationRule>

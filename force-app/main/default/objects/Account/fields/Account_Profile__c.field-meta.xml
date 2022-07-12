@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Profile__c</fullName>
+    <externalId>false</externalId>
+    <label>Account Profile</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unclassified</fullName>
+                <default>true</default>
+                <label>Unclassified</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>Global 2000</fullName>
+                <default>false</default>
+                <label>Global 2000</label>
+            </value>
+            <value>
+                <fullName>Large Enterprise</fullName>
+                <default>false</default>
+                <label>Large Enterprise</label>
+            </value>
+            <value>
+                <fullName>Medium Enterprise</fullName>
+                <default>false</default>
+                <label>Medium Enterprise</label>
+            </value>
+            <value>
+                <fullName>Strategic</fullName>
+                <default>false</default>
+                <label>Strategic</label>
+            </value>
+            <value>
+                <fullName>Public Sector</fullName>
+                <default>false</default>
+                <label>Public Sector</label>
+            </value>
+            <value>
+                <fullName>Relus not specified</fullName>
+                <default>false</default>
+                <label>Relus not specified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,145 @@
+{"notification":[
+{
+ "type":"UPDATE",
+  "organization":{
+     "duns":"217825255"
+  },
+  "elements": [ {
+   "element": "organization.industryCodes",
+  "previous": [
+     {
+       "typeDescription": "North American Industry Classification System 2012",
+       "description": "Unclassified Establishments",
+       "priority": 1,
+       "code": "999990",
+       "typeDnBCode": 24664
+     },
+     {
+       "typeDescription": "D&B Hoovers Industry Code",
+       "description": "Nonclassifiable establishments",
+       "priority": 1,
+       "code": "2058",
+       "typeDnBCode": 25838          },
+     {
+       "typeDescription": "US Standard Industry Code 1987 - 4 digit",
+       "description": "Nonclassified establishment",
+       "priority": 1,
+       "code": "9999",
+       "typeDnBCode": 399
+     },
+     {
+       "typeDescription": "D&B Standard Industry Code",
+       "description": "Nonclassifiable establishments",
+       "priority": 1,
+       "code": "99990000",
+       "typeDnBCode": 3599
+     },
+     {
+      "typeDescription": "NACE Revision 2",
+      "description": "Undetermined",
+      "priority": 1,
+      "code": "9999",
+      "typeDnBCode": 29104
+     }
+  ],
+  "current": [
+     {
+      "code": "238210",
+      "description": "Electrical Contractors",
+      "typeDescription": "North American Industry Classification System 2012",
+      "typeDnBCode": 24664,
+      "priority": 1
+     },
+     {
+      "code": "1857",
+      "description": "Electrical Contractors",
+      "typeDescription": "D&B Hoovers Industry Code",
+      "typeDnBCode": 25838,
+      "priority": 1
+     },
+     {
+      "code": "1731",
+      "description": "Electrical contractor",
+      "typeDescription": "US Standard Industry Code 1987 - 4 digit",
+      "typeDnBCode": 399,
+      "priority": 1
+     },
+     {
+      "code": "17310203",
+      "description": "Environmental system control installation",
+      "typeDescription": "D&B Standard Industry Code",
+      "typeDnBCode": 3599,
+      "priority": 1
+     },
+     {
+      "code": "C",
+      "description": "Construction",
+      "typeDescription": "D&B Standard Major Industry Code",
+      "typeDnBCode": 24657,
+      "priority": 1
+     },
+     {
+      "code": "4321",
+      "description": "Electrical installation",
+      "typeDescription": "NACE Revision 2",
+      "typeDnBCode": 29104,
+      "priority": 1
+     }
+  ],
+  "timestamp":"2016-07-29T13:22:19Z"
+}
+]
+},
+{
+  "type":"UPDATE",
+  "organization":{
+     "duns":"217825255"
+  },
+   "elements": [ {
+   "element":"organization.registeredAddress.streetName",
+   "previous":"BUILDING 4, HATTERS LANE, CROXLEY GREENBUSINESS PARK",
+   "current":"BUILDING 4, HATTERS LANE",
+   "timestamp":"2016-07-29T13:22:19Z"
+}
+]
+},
+{
+ "type":"UPDATE",
+  "organization":{
+     "duns":"217825255"
+  },
+  "elements": [ {
+     "element":"organization.telephone",
+    "previous": {
+          "telephoneNumber":"555555121",
+          "isdCode":"86",
+          "isUnreachable":false
+        },
+     "current": {
+          "telephoneNumber":"555555100",
+          "isdCode":"86",
+          "isUnreachable":false
+        },     
+     "timestamp":"2016-07-29T13:22:19Z"
+}
+]
+},
+{
+ "type":"UPDATE",
+  "organization":{
+     "duns":"217825255"
+  },
+  "elements": [ {
+     "element":"organization.email",
+    "previous": {
+          "address":"test@blank.com"
+        },
+     "current": {
+          "address":"test2@blank.com"
+        },     
+     "timestamp":"2016-07-29T13:22:19Z"
+}
+]
+}
+]
+}

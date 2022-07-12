@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agreement_terms_status__c</fullName>
+    <description>What stage is the agreement at?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What stage is the agreement at?</inlineHelpText>
+    <label>Agreement terms status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Draft</fullName>
+                <default>true</default>
+                <label>Draft</label>
+            </value>
+            <value>
+                <fullName>Submitted for approval</fullName>
+                <default>false</default>
+                <label>Submitted for approval</label>
+            </value>
+            <value>
+                <fullName>Recalled</fullName>
+                <default>false</default>
+                <label>Recalled</label>
+            </value>
+            <value>
+                <fullName>Framework Agreement Approved</fullName>
+                <default>false</default>
+                <label>Framework Agreement Approved</label>
+            </value>
+            <value>
+                <fullName>Framework Agreement Rejected</fullName>
+                <default>false</default>
+                <label>Framework Agreement Rejected</label>
+            </value>
+            <value>
+                <fullName>Customer PO Terms Approved</fullName>
+                <default>false</default>
+                <label>Customer PO Terms Approved</label>
+            </value>
+            <value>
+                <fullName>Customer PO Terms Rejected</fullName>
+                <default>false</default>
+                <label>Customer PO Terms Rejected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

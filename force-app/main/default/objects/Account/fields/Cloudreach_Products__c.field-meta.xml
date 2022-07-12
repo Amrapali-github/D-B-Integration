@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cloudreach_Products__c</fullName>
+    <description>A list of products that the customer consumes with Cloudreach</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A list of products that the customer consumes with Cloudreach</inlineHelpText>
+    <label>Cloudreach Products</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AIS</fullName>
+                <default>false</default>
+                <label>AIS</label>
+            </value>
+            <value>
+                <fullName>Cloud Enablement</fullName>
+                <default>false</default>
+                <label>Cloud Enablement</label>
+            </value>
+            <value>
+                <fullName>Core Operations</fullName>
+                <default>false</default>
+                <label>Core Operations</label>
+            </value>
+            <value>
+                <fullName>Cost Control</fullName>
+                <default>false</default>
+                <label>Cost Control</label>
+            </value>
+            <value>
+                <fullName>Managed Application</fullName>
+                <default>false</default>
+                <label>Managed Application</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>ITSM Integration</fullName>
+                <default>false</default>
+                <label>ITSM Integration</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

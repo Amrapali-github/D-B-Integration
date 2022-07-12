@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>scmws__Active_Customers</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.SALES</columns>
+    <columns>SCMC__E_Mail__c</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>SCMC__Sales_Rep__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Customer - Direct,Customer - Channel</value>
+    </filters>
+    <filters>
+        <field>SCMC__Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>SCMC__Customer__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Active Customers</label>
+</ListView>

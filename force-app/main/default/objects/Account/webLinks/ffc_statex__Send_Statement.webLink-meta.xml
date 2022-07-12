@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ffc_statex__Send_Statement</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Send Statement</masterLabel>
+    <openType>sidebar</openType>
+    <page>ffc_statex__sendaccountstatement</page>
+    <protected>false</protected>
+</WebLink>

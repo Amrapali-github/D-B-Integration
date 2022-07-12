@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCMC__Provide_Advanced_Ship_Notice__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Provide an advance ship notice for the customer if this is checked.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates whether an advanced ship notice is required or not.</inlineHelpText>
+    <label>Provide Advanced Ship Notice?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

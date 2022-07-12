@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supplier_Accounts1</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>c2g__CODAFinanceContact__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CR_Entity__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>Remittance_Email__c</columns>
+    <columns>Remittance_Email_Address__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Supplier</value>
+    </filters>
+    <label>Supplier Accounts</label>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Input_Validations_Canada_Domestic_2</fullName>
+    <active>true</active>
+    <description>Checks format of routing code</description>
+    <errorConditionFormula>AND
+(
+TEXT(c2g__CODAPaymentMethod__c) = &quot;CANADA DOMESTIC&quot;
+,
+LEN(  Bank_Routing_Number_US_Only__c  ) &lt;&gt; 9
+)</errorConditionFormula>
+    <errorDisplayField>Bank_Routing_Number_US_Only__c</errorDisplayField>
+    <errorMessage>The Bank Routing Number MUST be 9 digits - formed as &quot;0&quot;+3-digit institution code+5-digit transit code</errorMessage>
+</ValidationRule>

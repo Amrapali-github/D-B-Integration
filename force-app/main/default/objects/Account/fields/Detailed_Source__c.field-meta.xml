@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Detailed_Source__c</fullName>
+    <description>Use to track leads entered through websites</description>
+    <externalId>false</externalId>
+    <label>Detailed Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AWS</fullName>
+                <default>false</default>
+                <label>AWS</label>
+            </value>
+            <value>
+                <fullName>Google</fullName>
+                <default>false</default>
+                <label>Google</label>
+            </value>
+            <value>
+                <fullName>SFDC</fullName>
+                <default>false</default>
+                <label>SFDC</label>
+            </value>
+            <value>
+                <fullName>G-Cloud</fullName>
+                <default>false</default>
+                <label>G-Cloud</label>
+            </value>
+            <value>
+                <fullName>Cloudlock</fullName>
+                <default>false</default>
+                <label>Cloudlock</label>
+            </value>
+            <value>
+                <fullName>Cloudfinder</fullName>
+                <default>false</default>
+                <label>Cloudfinder</label>
+            </value>
+            <value>
+                <fullName>L-Tech</fullName>
+                <default>false</default>
+                <label>L-Tech</label>
+            </value>
+            <value>
+                <fullName>Avalon</fullName>
+                <default>false</default>
+                <label>Avalon</label>
+            </value>
+            <value>
+                <fullName>Eircom</fullName>
+                <default>false</default>
+                <label>Eircom</label>
+            </value>
+            <value>
+                <fullName>Web Inquiry</fullName>
+                <default>false</default>
+                <label>Web Inquiry</label>
+            </value>
+            <value>
+                <fullName>OggChat</fullName>
+                <default>false</default>
+                <label>OggChat</label>
+            </value>
+            <value>
+                <fullName>Telephone</fullName>
+                <default>false</default>
+                <label>Telephone</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Employee</fullName>
+                <default>false</default>
+                <label>Employee</label>
+            </value>
+            <value>
+                <fullName>Public Event</fullName>
+                <default>false</default>
+                <label>Public Event</label>
+            </value>
+            <value>
+                <fullName>Vendor Event</fullName>
+                <default>false</default>
+                <label>Vendor Event</label>
+            </value>
+            <value>
+                <fullName>Cloudreach Event</fullName>
+                <default>false</default>
+                <label>Cloudreach Event</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Twitter</fullName>
+                <default>false</default>
+                <label>Twitter</label>
+            </value>
+            <value>
+                <fullName>Linkedin Data</fullName>
+                <default>false</default>
+                <label>Linkedin Data</label>
+            </value>
+            <value>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+                <label>Social Media</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

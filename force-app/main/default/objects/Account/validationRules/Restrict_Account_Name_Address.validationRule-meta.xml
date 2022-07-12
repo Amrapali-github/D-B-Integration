@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Account_Name_Address</fullName>
+    <active>false</active>
+    <description>This validation is to restrict change of Account Name, Billing Address &amp; Shipping Address for non-finance users.</description>
+    <errorConditionFormula>AND(
+
+ NOT( ISNEW() ), OR(ISCHANGED( Name ),  ISCHANGED( BillingAddress ) ,  ISCHANGED( ShippingAddress )) ,  RecordTypeId  &lt;&gt; &quot;0120J000000B6io&quot;,
+
+
+
+$Profile.Name  &lt;&gt; &quot;CR FinancialForce Accountant&quot; ,  $Profile.Name  &lt;&gt; &quot;CR FinancialForce Credit and Collections Administrator&quot;,  $Profile.Name  &lt;&gt; &quot;CR FinancialForce Purchase Ledger Manager&quot;,  $Profile.Name  &lt;&gt; &quot;CR FinancialForce Commercial Support User&quot;,  $Profile.Name  &lt;&gt; &quot;CR FinancialForce Accountant + PO Admin&quot;,  $Profile.Name  &lt;&gt; &quot;CR FinancialForce Purchase Ledger Manager (Admin)&quot;
+
+)</errorConditionFormula>
+    <errorMessage>Only Finance Team Can Change the Account Name, Billing Address &amp; Shipping Address.</errorMessage>
+</ValidationRule>

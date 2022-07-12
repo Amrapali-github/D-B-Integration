@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZCloudamize_First_Conversion__c</fullName>
+    <description>Cloudamize Legacy Field</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Cloudamize Legacy Field</inlineHelpText>
+    <label>ZCloudamize - First Conversion</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

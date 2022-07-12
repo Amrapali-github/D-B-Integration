@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Using_Postini__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This checkbox shows if the customer is using postini</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This checkbox shows if the customer is using postini</inlineHelpText>
+    <label>Using Postini</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

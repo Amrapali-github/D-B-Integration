@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salesforce_Business_Tier__c</fullName>
+    <externalId>false</externalId>
+    <label>Salesforce Business Tier</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Executive Business</fullName>
+                <default>false</default>
+                <label>Executive Business</label>
+            </value>
+            <value>
+                <fullName>General Business</fullName>
+                <default>false</default>
+                <label>General Business</label>
+            </value>
+            <value>
+                <fullName>Mid Market</fullName>
+                <default>false</default>
+                <label>Mid Market</label>
+            </value>
+            <value>
+                <fullName>Small to Medium Business</fullName>
+                <default>false</default>
+                <label>Small to Medium Business</label>
+            </value>
+            <value>
+                <fullName>Emerging Small Business</fullName>
+                <default>false</default>
+                <label>Emerging Small Business</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

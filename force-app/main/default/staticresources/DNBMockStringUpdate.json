@@ -1,0 +1,13 @@
+{
+  "type":"UPDATE",
+  "organization":{
+     "duns":"217825255"
+  },
+   "elements": [ {
+   "element":"organization.registeredAddress.streetName",
+   "previous":"BUILDING 4, HATTERS LANE, CROXLEY GREENBUSINESS PARK",
+   "current":"BUILDING 4, HATTERS LANE",
+   "timestamp":"2016-07-29T13:22:19Z"
+}
+]
+}

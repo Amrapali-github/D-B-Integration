@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Register_Address_For_Sales_Team</fullName>
+    <active>true</active>
+    <description>This will restrict Sales Users to edit the registered address field if the customer onboarding box is ticked.</description>
+    <errorConditionFormula>AND (Customer_Onboarded__c  = TRUE, 
+
+OR (ISCHANGED( Street_Address__c ), ISCHANGED(  Street_Address_2__c  ), ISCHANGED(   City_Name__c  ),ISCHANGED(   Registered_State_Province__c  ),ISCHANGED(  Registered_Zip_Postal_Code__c  ),ISCHANGED(   Registered_Country__c  )),
+
+OR ($Profile.Name = &quot;CA Sales Team&quot;,$Profile.Name = &quot;CA Sales Managers&quot;, $Profile.Name = &quot;CR Sales Team&quot; ,$Profile.Name = &quot;CR Sales Managers&quot; ))</errorConditionFormula>
+    <errorMessage>Only Finance Can Edit Registered Address After Customer Is Onboarded.</errorMessage>
+</ValidationRule>

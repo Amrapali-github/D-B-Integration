@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_postcode_and_country</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISNEW() &amp;&amp; ( ISBLANK(BillingCountry) || ISBLANK(BillingPostalCode))</errorConditionFormula>
+    <errorDisplayField>BillingCountry</errorDisplayField>
+    <errorMessage>Please include the Country and Postal Code for this account</errorMessage>
+</ValidationRule>

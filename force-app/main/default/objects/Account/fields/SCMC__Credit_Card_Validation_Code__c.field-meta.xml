@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCMC__Credit_Card_Validation_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>American Express (AMEX) -AMEX&apos;s code is a four-digit number on the front of the card above the credit card number. Visa - Visa&apos;s Card Verification Value (CVV) and MasterCard&apos;s Validation Code (CVC) are three-digit numbers on the back of the card.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>American Express (AMEX) -AMEX&apos;s code is a four-digit number on the front of the card above the credit card number. Visa - Visa&apos;s Card Verification Value (CVV) and MasterCard&apos;s Validation Code (CVC) are three-digit numbers on the back of the card.</inlineHelpText>
+    <label>DEPRECATED: Credit Card Validation Code</label>
+    <length>4</length>
+    <maskChar>asterisk</maskChar>
+    <maskType>all</maskType>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>EncryptedText</type>
+</CustomField>

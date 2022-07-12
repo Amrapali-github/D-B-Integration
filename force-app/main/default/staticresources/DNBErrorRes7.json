@@ -1,0 +1,1 @@
+{"transactionDetail":{"transactionID":"rrt-0c728d27882efb990-a-eu-17657-1707645-62","transactionTimestamp":"2022-04-04T18:57:31.018Z","inLanguage":"en-US"},"inquiryDetail":{"reference":"CloudreachRegistrationDev","duns":"081940553"},"error":{"errorCode":"21005","errorMessage":"The requested duns does not exists in your registration profile"}}

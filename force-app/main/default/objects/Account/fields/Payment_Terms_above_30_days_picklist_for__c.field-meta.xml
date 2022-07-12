@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Terms_above_30_days_picklist_for__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(Framework_Agreement_Contract__r.Payment_Terms_above_30_Days_picklist__c)</formula>
+    <label>Payment Terms above 30 days</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

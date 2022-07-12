@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Type__c</fullName>
+    <description>What Cloudreach contract term the customer in on.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What Cloudreach contract term the customer in on.</inlineHelpText>
+    <label>Contract Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1.0</fullName>
+                <default>false</default>
+                <label>1.0</label>
+            </value>
+            <value>
+                <fullName>1.5</fullName>
+                <default>false</default>
+                <label>1.5</label>
+            </value>
+            <value>
+                <fullName>2.0</fullName>
+                <default>false</default>
+                <label>2.0</label>
+            </value>
+            <value>
+                <fullName>2.1</fullName>
+                <default>false</default>
+                <label>2.1</label>
+            </value>
+            <value>
+                <fullName>2.2</fullName>
+                <default>false</default>
+                <label>2.2</label>
+            </value>
+            <value>
+                <fullName>2.5</fullName>
+                <default>false</default>
+                <label>2.5</label>
+            </value>
+            <value>
+                <fullName>2.6</fullName>
+                <default>false</default>
+                <label>2.6</label>
+            </value>
+            <value>
+                <fullName>Agile Ops</fullName>
+                <default>false</default>
+                <label>Agile Ops</label>
+            </value>
+            <value>
+                <fullName>EDP</fullName>
+                <default>false</default>
+                <label>EDP</label>
+            </value>
+            <value>
+                <fullName>Foundation</fullName>
+                <default>false</default>
+                <label>Foundation</label>
+            </value>
+            <value>
+                <fullName>Relus</fullName>
+                <default>false</default>
+                <label>Relus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

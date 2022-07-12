@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Net_Revenue_Sum__c</fullName>
+    <description>Roll Up Summary workaround field to calculate sum of Net Revenue for all Opportunities under an Account</description>
+    <externalId>false</externalId>
+    <label>Total Net Revenue (Sum)</label>
+    <summarizedField>Opportunity.Total_Net_Revenue_Sum__c</summarizedField>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

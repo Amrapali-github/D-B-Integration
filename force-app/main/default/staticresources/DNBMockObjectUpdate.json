@@ -1,0 +1,22 @@
+{
+ "type":"UPDATE",
+  "organization":{
+     "duns":"217825255"
+  },
+  "elements": [ {
+     "element":"organization.telephone",
+    "previous": {
+          "telephoneNumber":"5555551212",
+          "isdCode":"86",
+          "isUnreachable":false
+        },
+     "current": {
+          "telephoneNumber":"5555551000",
+          "isdCode":"86",
+          "isUnreachable":false
+        },     
+     "timestamp":"2016-07-29T13:22:19Z"
+}
+]
+}
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZCloudamize_Recent_Conversation__c</fullName>
+    <description>Cloudamize Legacy Field</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Cloudamize Legacy Field</inlineHelpText>
+    <label>ZCloudamize - Recent Conversation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

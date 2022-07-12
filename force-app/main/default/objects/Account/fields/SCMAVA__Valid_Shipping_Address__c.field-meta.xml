@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCMAVA__Valid_Shipping_Address__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Has the shipping address been validated?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Has the shipping address been validated?</inlineHelpText>
+    <label>Valid Shipping Address</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

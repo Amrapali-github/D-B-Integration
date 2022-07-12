@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Global_turnover_value__c</fullName>
+    <externalId>false</externalId>
+    <label>Global turnover value</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&lt;$500M</fullName>
+                <default>false</default>
+                <label>&lt;$500M</label>
+            </value>
+            <value>
+                <fullName>$500M - $1B</fullName>
+                <default>false</default>
+                <label>$500M - $1B</label>
+            </value>
+            <value>
+                <fullName>$1B - $10B</fullName>
+                <default>false</default>
+                <label>$1B - $10B</label>
+            </value>
+            <value>
+                <fullName>&gt;$10B</fullName>
+                <default>false</default>
+                <label>&gt;$10B</label>
+            </value>
+            <value>
+                <fullName>Public Sector</fullName>
+                <default>false</default>
+                <label>Public Sector</label>
+            </value>
+            <value>
+                <fullName>Relus not specified</fullName>
+                <default>false</default>
+                <label>Relus not specified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

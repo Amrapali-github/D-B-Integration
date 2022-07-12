@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resource_Account</fullName>
+    <fields>Name</fields>
+    <fields>SCMC__Currency__c</fields>
+    <fields>Salesforce_User__c</fields>
+    <fields>Workday_ID__c</fields>
+    <label>Resource Account</label>
+</CompactLayout>

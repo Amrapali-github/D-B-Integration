@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCMC__Customer_Site_Id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is a unique identifier for an Account. This field will be used in the creation of a Sales Order from a Quote to determine if the Quote came in from a known Customer.  This Id may be assigned in a foreign system - especially if the RFQ came from that foreign system</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Enter a unique Id for this Account. If RFQs are retrieved from a foreign system, use the value for the site that the foreign system assigns.</inlineHelpText>
+    <label>Customer Site Id</label>
+    <length>10</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

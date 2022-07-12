@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_D_B_update__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Prevents D&amp;B from updating the address</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Prevents D&amp;B from updating the address</inlineHelpText>
+    <label>Prevent D&amp;B update</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

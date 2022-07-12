@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCMC__Default_Address__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>Name + BR()+
+ SCMC__Corp_Line1__c +BR()+ 
+SCMC__Corp_Line2__c+ IF(SCMC__Corp_Line2__c = &quot;&quot;, &quot;&quot;, BR() ) +
+ SCMC__Corp_City__c + &apos;, &apos; +  SCMC__Corp_State_Province__c + &apos; &apos; + 
+ SCMC__Corp_PostalCode__c  + &apos; &apos; +
+ SCMC__Corp_Country__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Default Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

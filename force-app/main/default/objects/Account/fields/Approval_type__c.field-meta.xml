@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_type__c</fullName>
+    <externalId>false</externalId>
+    <label>Approval type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer PO Terms Approval</fullName>
+                <default>false</default>
+                <label>Customer PO Terms Approval</label>
+            </value>
+            <value>
+                <fullName>Framework Agreement Approval</fullName>
+                <default>false</default>
+                <label>Framework Agreement Approval</label>
+            </value>
+            <value>
+                <fullName>NDA Approval</fullName>
+                <default>false</default>
+                <label>NDA Approval</label>
+            </value>
+            <value>
+                <fullName>Non-negotiated Customer terms Approval</fullName>
+                <default>false</default>
+                <label>Non-negotiated Customer terms Approval</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

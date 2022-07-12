@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agreement_Terms__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Customer PO to be used strictly one time ONLY!</inlineHelpText>
+    <label>Agreement Terms</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Framework Agreement</fullName>
+                <default>false</default>
+                <label>Framework Agreement</label>
+            </value>
+            <value>
+                <fullName>Customer PO</fullName>
+                <default>false</default>
+                <label>Customer PO</label>
+            </value>
+            <value>
+                <fullName>Non-negotiated Customer terms</fullName>
+                <default>false</default>
+                <label>Non-negotiated Customer terms</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

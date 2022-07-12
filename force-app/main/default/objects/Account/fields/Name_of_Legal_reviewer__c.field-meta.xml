@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_of_Legal_reviewer__c</fullName>
+    <externalId>false</externalId>
+    <label>Name of Legal reviewer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Lakhan Shah</fullName>
+                <default>false</default>
+                <label>Lakhan Shah</label>
+            </value>
+            <value>
+                <fullName>Stephanie Leopold</fullName>
+                <default>false</default>
+                <label>Stephanie Leopold</label>
+            </value>
+            <value>
+                <fullName>Ruth Orpwood</fullName>
+                <default>false</default>
+                <label>Ruth Orpwood</label>
+            </value>
+            <value>
+                <fullName>Giovanni Li Voti</fullName>
+                <default>false</default>
+                <label>Giovanni Li Voti</label>
+            </value>
+            <value>
+                <fullName>Maddy Goldfarb</fullName>
+                <default>false</default>
+                <label>Maddy Goldfarb</label>
+            </value>
+            <value>
+                <fullName>Oliver Richardson</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oliver Richardson</label>
+            </value>
+            <value>
+                <fullName>Phil Wyatt</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Phil Wyatt</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

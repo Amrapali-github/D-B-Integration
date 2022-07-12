@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enforce_a_Country_Code_where_reqd</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISBLANK(TEXT(c2g__CODAECCountryCode__c)) = TRUE,
+ISBLANK(c2g__CODAVATRegistrationNumber__c) = FALSE
+)</errorConditionFormula>
+    <errorDisplayField>c2g__CODAECCountryCode__c</errorDisplayField>
+    <errorMessage>When recording an Account&apos;s Tax Registration Number, you must also specify a valid Tax Country Code (prefix)</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCMC__Packslip_Format__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The name of a Visualforce page that renders a specific packslip for this Account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the name of a Visualforce page that renders a packslip that is in a specific format for this Account. You do not need to enter anything here if you do not need a customer specific packslip.</inlineHelpText>
+    <label>Packslip Format</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

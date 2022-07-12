@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Statement_Emails__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Must be separated with commas. No space is required after the comma.</inlineHelpText>
+    <label>Additional Statement Emails</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

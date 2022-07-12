@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCMC__Auto_Quote__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When checked, the auto quote indicates whether we can automatically send a Quote to this Customer. This can be turned off to force a sales person to review the Quote and send it manually.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When checked, the system is authorized to automatically create Quotes to this Customer.</inlineHelpText>
+    <label>Auto Quote?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

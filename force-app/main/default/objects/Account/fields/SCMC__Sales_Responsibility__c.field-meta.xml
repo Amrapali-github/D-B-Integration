@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCMC__Sales_Responsibility__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Sales Responsibility that looks after this Account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Sales Responsibility that normally looks after this Account.</inlineHelpText>
+    <label>Sales Responsibility</label>
+    <referenceTo>SCMC__Sales_Responsibility__c</referenceTo>
+    <relationshipLabel>Customer Sites (Sales Responsibility)</relationshipLabel>
+    <relationshipName>SalesResponsibilities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

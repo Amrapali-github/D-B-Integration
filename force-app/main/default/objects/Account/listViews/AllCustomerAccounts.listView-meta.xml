@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllCustomerAccounts</fullName>
+    <columns>Account_ID__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <columns>Link_to_Account_Plan__c</columns>
+    <columns>ACCOUNT.CURRENCY_ISO_CODE</columns>
+    <columns>Opportunity_value__c</columns>
+    <columns>Total_Net_Revenue_Currency__c</columns>
+    <columns>Cloudreach_Products__c</columns>
+    <columns>ZCloudamize_Number_of_Visits__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.LAST_ACTIVITY</field>
+        <operation>greaterThan</operation>
+        <value>1/1/2019</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Customer</value>
+    </filters>
+    <label>All Customer Accounts</label>
+</ListView>
