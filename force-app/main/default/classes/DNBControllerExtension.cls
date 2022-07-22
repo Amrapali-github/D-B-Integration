@@ -379,6 +379,9 @@ public class DNBControllerExtension {
                     a.Credit_Limit_Currency__c = enrichedOrg.dnbAssessment.creditLimitRecommendation.maximumRecommendedLimit.dnbCurrency;
                     a.Maximum_Recommended_Credit_Limit__c = enrichedOrg.dnbAssessment.creditLimitRecommendation.maximumRecommendedLimit.value;
                 } 
+            }
+            if(enrichedOrg.dnbAssessment.standardRating != null){
+                a.Standard_Rating__c = enrichedOrg.dnbAssessment.standardRating.rating;
             }            
         }
         if(enrichedOrg.primaryAddress != null && DNBMonitoringHandler.AllowAddressUpdate(a)){

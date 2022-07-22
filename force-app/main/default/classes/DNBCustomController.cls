@@ -395,6 +395,9 @@ public class DNBCustomController{
                     a.Maximum_Recommended_Credit_Limit__c = enrichedOrg.dnbAssessment.creditLimitRecommendation.maximumRecommendedLimit.value;
                 } 
             }
+            if(enrichedOrg.dnbAssessment.standardRating != null){
+                a.Standard_Rating__c = enrichedOrg.dnbAssessment.standardRating.rating;
+            }
         }
         if(enrichedOrg.primaryAddress != null){
             system.debug('passed primary address');

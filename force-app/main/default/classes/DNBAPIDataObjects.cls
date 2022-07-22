@@ -424,7 +424,7 @@ public class DNBAPIDataObjects {
     */
     public class DNBStandardRating {
         //public string financialStrength {get;set;}
-        //public string rating {get;set;}
+        public string rating {get;set;}
         //public List<DNBRatingOverrideReasons> ratingOverrideReasons {get;set;}
         //public List<DNBRatingReason> ratingReason {get;set;}
         //public string riskSegment {get;set;}
